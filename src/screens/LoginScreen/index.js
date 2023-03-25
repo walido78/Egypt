@@ -1,7 +1,4 @@
 
-import firebase from '../../../firebase.js';
-
-
 
 import React from 'react';
 import {
@@ -15,16 +12,18 @@ import styles from './styles';
 
 const LoginScreen = ({ navigation }) => {
     const handleLoginPress = () => {
-        firebase
-          .auth()
-          .signInWithEmailAndPassword(email, password)
-          .then(() => {
-            // Navigate to the home screen or other authenticated screen
-            navigation.navigate('Home');
-          })
-          .catch((error) => {
-            // Handle authentication errors here
-          });
+        //import firebase from '../../../firebase.js';
+        // firebase
+        //   .auth()
+        //   .signInWithEmailAndPassword(email, password)
+        //   .then(() => {
+        //     // Navigate to the home screen or other authenticated screen
+        //     navigation.navigate('Home');
+        //   })
+        //   .catch((error) => {
+        //     // Handle authentication errors here
+        //   });
+        
       };
 
   const handleRegisterPress = () => {
