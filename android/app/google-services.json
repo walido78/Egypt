@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "832843091747",
+    "project_id": "egyptproject-eb6e9",
+    "storage_bucket": "egyptproject-eb6e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832843091747:android:eb54752b838e66f7a3c696",
+        "android_client_info": {
+          "package_name": "com.egyptproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832843091747-de7s50r3s3ts7n0ceg3o6spcnrqtnl5o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjlfpJumsY83Igwnbv1E105LjJr2fp_H8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832843091747-de7s50r3s3ts7n0ceg3o6spcnrqtnl5o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

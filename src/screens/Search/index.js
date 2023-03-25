@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from 'react-native';
 import styles from './styles';
-
+import Entypo from 'react-native-vector-icons/Entypo';
 const SearchRecipe = () => {
   const [search, setSearch] = useState('');
 
@@ -20,7 +20,7 @@ const SearchRecipe = () => {
         onChangeText={setSearch}
       />
       <TouchableOpacity style={styles.button} onPress={handleSearch}>
-        <Text style={styles.buttonText}>Rechercher</Text>
+        <Text style={styles.buttonText}>Search</Text>
       </TouchableOpacity>
     </View>
   );
