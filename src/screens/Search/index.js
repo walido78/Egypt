@@ -6,7 +6,7 @@ const SearchRecipe = () => {
   const [search, setSearch] = useState('');
 
   const handleSearch = () => {
-    // Fonction pour lancer la recherche
+    // Function for Search
     console.log(`Recherche de la recette : ${search}`);
   };
 
