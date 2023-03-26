@@ -9,6 +9,7 @@ const RegisterScreen = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
 
   const handleRegister = () => {
+    
     // Your registration logic goes here
   };
 

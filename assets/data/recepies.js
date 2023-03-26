@@ -1,0 +1,55 @@
+
+const recipes = {
+    "recipes": [
+      {
+        "id": 1,
+        "name": "Foul",
+        "image": "https://www.themealdb.com/images/media/meals/uyqrrv1511553350.jpg",
+        "description": "A delicious and Foulll.",
+        "utensils": [
+          "chicken",
+          "coconut milk",
+          "onion",
+          "garlic",
+          "ginger",
+          "curry powder",
+          "chili powder",
+          "salt",
+          "pepper"
+        ],
+        "instructions": [
+          "Heat oil in a pan and fry onion, garlic, and ginger until fragrant.",
+          "Add chicken and cook until browned.",
+          "Add curry powder, chili powder, salt, and pepper and stir to combine.",
+          "Add coconut milk and simmer until chicken is cooked through.",
+          "Serve hot with rice or naan bread."
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Ful medames",
+        "image": "https://www.themealdb.com/images/media/meals/uyqrrv1511553350.jpg",
+        "description": "A simple and classic pasta dish with tomato sauce.",
+        "utensils": [
+          "pasta",
+          "tomatoes",
+          "onion",
+          "garlic",
+          "olive oil",
+          "salt",
+          "pepper"
+        ],
+        "instructions": [
+          "Cook pasta according to package instructions.",
+          "Heat olive oil in a pan and fry onion and garlic until soft.",
+          "Add chopped tomatoes and cook until softened and saucy.",
+          "Season with salt and pepper to taste.",
+          "Drain pasta and toss with tomato sauce.",
+          "Serve hot with grated parmesan cheese."
+        ]
+      }
+    ]
+  };
+  
+  export default recipes;
+  

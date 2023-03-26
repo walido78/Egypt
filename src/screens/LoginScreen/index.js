@@ -12,6 +12,7 @@ import styles from './styles';
 
 const LoginScreen = ({ navigation }) => {
     const handleLoginPress = () => {
+      navigation.navigate('BottomTab');
         //import firebase from '../../../firebase.js';
         // firebase
         //   .auth()
