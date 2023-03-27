@@ -17,7 +17,16 @@ const ReceipeDetail = () => {
     setReceipeDetail(route?.params.item);
   }, []);
 
- 
+  const renderItem = ({item}) => (
+    <View style={styles.listItem}>
+      <View style={styles.bulletContainer}>
+        <Text style={styles.bullet}>• </Text>
+      </View>
+      <View style={styles.titleContainer}>
+        <Text style={styles.renderInstructionTitle}>{item}</Text>
+      </View>
+    </View>
+  );
 
   const renderInstruction = ({item}) => (
     <View style={styles.listItem}>
@@ -38,14 +47,14 @@ const ReceipeDetail = () => {
         <View style={styles.ingredientsContainer}>
           <Text style={styles.Ingredientstitle}>Ingredients:</Text>
           <Text>
-            {receipeDetail?.utensils.map(item => {
-              return (
-                <Text style={styles.title}>
-                  {item}
-                  {', '}
-                </Text>
-              );
-            })}
+            <FlatList
+             
+              scrollEnabled={false}
+              horizontal={false}
+              data={receipeDetail?.utensils}
+              renderItem={renderItem}
+              keyExtractor={item => Math.random() * 100}
+            />
           </Text>
         </View>
         <View style={styles.instructionsContainer}>

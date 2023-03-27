@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
 import styles from './styles';
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  onAuthStateChanged,
+  signOut,
+} from 'firebase/auth';
+import {auth} from '../../../firebase';
 
 const RegisterScreen = () => {
   const [name, setName] = useState('');
@@ -8,9 +15,24 @@ const RegisterScreen = () => {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
-  const handleRegister = () => {
-    
-    // Your registration logic goes here
+  const handleRegister = async () => {
+    try {
+      if (password !== confirmPassword) {
+        throw new Error("Passwords don't match");
+      }
+      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      if(!userCredential) {
+        throw new Error("Couldn't register user");
+      }
+      // navigate to the login page when the login button is pressed
+      navigation.navigate('Login');
+
+      // const user = userCredential.user;
+      // await user.updateProfile({ displayName: name });
+      // console.log('User registered:', user);
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
