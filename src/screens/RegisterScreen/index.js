@@ -21,6 +21,7 @@ const RegisterScreen = () => {
         throw new Error("Passwords don't match");
       }
       const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+      console.log(userCredential)
       if(!userCredential) {
         throw new Error("Couldn't register user");
       }

@@ -70,6 +70,7 @@ function MyTabBar({state, descriptors, navigation}) {
         var selectedTabBackgroundColor = isFocused ? 'black' : 'black';
         return (
           <TouchableOpacity
+            key={route.name}
             accessibilityRole="button"
             accessibilityStates={isFocused ? ['selected'] : []}
             accessibilityLabel={options.tabBarAccessibilityLabel}
