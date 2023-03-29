@@ -48,12 +48,12 @@ const ReceipeDetail = () => {
           <Text style={styles.Ingredientstitle}>Ingredients:</Text>
           <Text>
             <FlatList
-             
+              
               scrollEnabled={false}
               horizontal={false}
               data={receipeDetail?.utensils}
               renderItem={renderItem}
-              keyExtractor={item => Math.random() * 100}
+              keyExtractor={item => item}
             />
           </Text>
         </View>
@@ -63,7 +63,7 @@ const ReceipeDetail = () => {
             horizontal={false}
             data={receipeDetail?.instructions}
             renderItem={renderInstruction}
-            keyExtractor={item => Math.random() * 100}
+            keyExtractor={item => item}
           />
         </View>
       </View>

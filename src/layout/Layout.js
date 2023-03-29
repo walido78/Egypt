@@ -6,15 +6,15 @@ const ScreenNavigations = () => {
   return (
     
     <Stack.Navigator initialRouteName="Login">
-      {AllScreens.map(({name, component, options}) => (
-        <Stack.Screen
-          key={name}
-          name={name}
-          component={component}
-          options={options}
-        />
-      ))}
-    </Stack.Navigator>
+    {AllScreens.map(({ name, component, options }, index) => (
+      <Stack.Screen
+        key={index.toString()} // add a unique key prop using the index
+        name={name}
+        component={component}
+        options={options}
+      />
+    ))}
+  </Stack.Navigator>
   );
 };
 
