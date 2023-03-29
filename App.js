@@ -15,6 +15,8 @@ import ProfileScreen from './src/screens/Profile';
 // import RecipePage from './src/screens/RecipePage';
 // import RegisterScreen from './src/screens/RegisterScreen';
 // import RecipeListItem from './src/item/RecipeListItem.js';
+import LoginScreen from './src/screens/LoginScreen';
+import RegisterScreen from './src/screens/RegisterScreen';
 import recipesData from './assets/data/RecipeList.json';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
